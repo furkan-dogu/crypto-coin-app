@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Crypto Coin App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="./src/assets/readmeImages/coin-app.gif" />
+</div>
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+This application is a React-based web app that fetches live data for cryptocurrencies and allows users to view details of the cryptocurrency they choose.
 
-### `yarn start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Skeleton](#project-skeleton)
+- [Screenshots](#screenshots)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
 
-### `yarn test`
+[Crypto Coin App]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `yarn build`
+- Users can search for cryptocurrencies through a search box and view their details.
+- Details such as ranking, symbol, price, percentage change, etc., of each cryptocurrency are displayed in a table.
+- When users select a cryptocurrency, more information can be viewed in a modal window.
+- Designed with a user-friendly interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- Axios for API requests
+- [Sweetalert2](https://sweetalert2.github.io/) for alert 
+- [Coinranking API](https://api.coinranking.com/v2/coins/) for products data
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
+- Styling with [Bootstrap](https://getbootstrap.com/), [React-Bootstrap](https://react-bootstrap.netlify.app/) and CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Skeleton
 
-### `yarn eject`
+```
+Crypto Coin App (folder)
+|
+|----readme.md         
+SOLUTION
+├── public
+│    └── index.html
+├── src
+│    ├── assets
+│    │     └── [images]
+│    ├── components
+│    │     ├── Modal.jsx
+│    │     ├── Search.jsx          
+│    │     └── Table.jsx  
+│    ├── pages   
+│    │     └── Home.jsx 
+│    ├── App.js
+│    ├── index.css
+│    └── index.js
+├── package.json
+└── yarn.lock
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div align="center">
+  <img src="./src/assets/readmeImages/Screenshot_1.jpg"  width="35%" height="500" />
+  <img src="./src/assets/readmeImages/Screenshot_2.jpg"  width="55%" height="600" />
+  <img src="./src/assets/readmeImages/Screenshot_3.jpg"  width="90.5%" height="450" />
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Compatibility
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is compatible with both wide-screen computers and mobile devices.
