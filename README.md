@@ -17,7 +17,7 @@ This application is a React-based web app that fetches live data for cryptocurre
 
 ## Live Demo
 
-[Crypto Coin App]()
+[Crypto Coin App](https://crypto-coin-app-three.vercel.app/)
 
 ## Features
 
