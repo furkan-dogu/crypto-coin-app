@@ -1,33 +1,34 @@
 import React from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
-const tableHeader = ["Name", "Rank", "Symbol", "Icon", "Change"];
-
 const Table = ({ coins }) => {
   return (
     <div className="container d-flex flex-column">
       <table className="table">
         <thead>
           <tr>
-            {tableHeader.map((item, index) => (
-              <th key={index}>{item}</th>
-            ))}
+            <th>Name</th>
+            <th className="rank">Rank</th>
+            <th className="symbol">Symbol</th>
+            <th>Icon</th>
+            <th>Change</th>
+            <th>Price</th>
           </tr>
         </thead>
 
         <tbody>
           {coins.map(
             (
-              { uuid, name, symbol, iconUrl, change, coinrankingUrl, color, rank }
+              { uuid, name, symbol, iconUrl, change, coinrankingUrl, color, rank, price }
             ) => (
               <tr key={uuid}>
                 <td className="fw-bold" style={{ color: "gray" }}>
                   {name}
                 </td>
-                <td className="fw-bold" style={{ color: `${color}` }}>
+                <td className="fw-bold rank" style={{ color: `${color}` }}>
                   {rank}
                 </td>
-                <td className="fw-bold" style={{ color: `${color}` }}>
+                <td className="fw-bold symbol" style={{ color: `${color}` }}>
                   {symbol}
                 </td>
                 <td>
@@ -41,6 +42,7 @@ const Table = ({ coins }) => {
                     {change}
                   </div>
                 </td>
+                <td className="fw-bold" style={{ color: `${color}` }}>${Number(price).toFixed(2)}</td>
               </tr>
             )
           )}
